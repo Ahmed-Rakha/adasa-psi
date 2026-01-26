@@ -84,6 +84,13 @@
 .color-white {
   color: white;
 }
+
+.color-yellow-500 {
+  color: var(--color-yellow-500);
+}
+.color-yellow-300 {
+  color: var(--color-yellow-300);
+}
 .color-red-400 {
   color: var(--color-red-400);
 }

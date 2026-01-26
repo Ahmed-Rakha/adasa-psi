@@ -1,0 +1,22 @@
+.pagination-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2121;
+  min-width: 60px;
+  height: 60px;
+  color: var(--color-neutral-400);
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.pagination-container button.active {
+  background-color: var(--color-orange-500);
+  color: #fff;
+}
+
+.pagination-container .disabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,22 @@
+.search-input-form > input {
+  padding-left: 50px;
+  padding-block: 10px;
+  background-color: #1f2121;
+  color: var(--color-neutral-400);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  min-width: 280px;
+}
+.search-input-form > span {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--color-neutral-400);
+  font-size: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
