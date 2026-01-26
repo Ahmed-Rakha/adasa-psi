@@ -1,0 +1,41 @@
+.footer-header::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 50px;
+  top: 50%;
+  right: -70px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to left,
+    var(--color-orange-300),
+    var(--color-orange-500)
+  );
+}
+.display-arrow div {
+  width: fit-content;
+}
+.display-arrow div a {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.display-arrow div i {
+  transform: translateX(10px);
+  color: var(--color-orange-500);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.display-arrow div:hover i {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.display-arrow div:hover a {
+  transform: translateX(-5px);
+  color: var(--color-orange-500);
+}
+
+.footer-policy-condition-links a:hover {
+  color: var(--color-orange-500);
+}

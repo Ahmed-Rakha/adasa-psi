@@ -1,0 +1,51 @@
+span.icon {
+  color: var(--color-neutral-400);
+  padding: 14px 12px;
+  border: 0.1px solid var(--color-orange-400);
+  border-radius: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+span.icon i {
+  font-size: 1.1rem;
+}
+.category-card {
+  transition: all 0.3s ease-in-out;
+}
+.category-card:hover {
+  background: linear-gradient(
+    to left,
+    var(--color-orange-300),
+    var(--color-orange-500)
+  );
+  transform: translateY(-10px);
+}
+.category-card:hover span.icon {
+  background-color: var(--color-orange-400);
+  border-color: transparent;
+}
+.category-card:hover span.icon i {
+  color: #fff;
+}
+
+.arrow-container {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 30%;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: #5f5454;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-card:hover .arrow-container {
+  opacity: 1;
+}

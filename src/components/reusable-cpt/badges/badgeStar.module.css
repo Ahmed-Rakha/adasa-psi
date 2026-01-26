@@ -1,0 +1,16 @@
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: fit-content;
+  background: linear-gradient(
+    to left,
+    var(--color-orange-400),
+    var(--color-yellow-500)
+  );
+  display: inline-block;
+  font-weight: bold;
+}
+.badge i {
+  font-size: 0.7rem;
+}

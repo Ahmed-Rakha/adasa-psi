@@ -1,0 +1,33 @@
+.pulse-container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2px solid var(--color-orange-500);
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: color-mix(
+    in oklab,
+    var(--color-orange-500) 10%,
+    transparent
+  );
+}
+
+.pulse-circle {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}

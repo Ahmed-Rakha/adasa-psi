@@ -1,0 +1,21 @@
+.home-section {
+  padding-top: 120px;
+}
+.home-section > div {
+  width: 55%;
+}
+.home-section h2:nth-child(1) {
+  color: white;
+}
+
+.home-section h2:nth-child(2) {
+  background-image: linear-gradient(
+    to left,
+    var(--color-orange-300),
+    var(--color-orange-500)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

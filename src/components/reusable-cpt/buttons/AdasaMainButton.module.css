@@ -1,0 +1,6 @@
+.adasaMainButton:hover {
+  transform: translateY(-5px);
+}
+.adasaMainButton:hover i {
+  /* transform: translateX(-5px); */
+}

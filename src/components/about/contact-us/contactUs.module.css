@@ -1,0 +1,7 @@
+.contact-us {
+  background: linear-gradient(
+    to left,
+    var(--color-orange-400),
+    var(--color-orange-700)
+  );
+}
