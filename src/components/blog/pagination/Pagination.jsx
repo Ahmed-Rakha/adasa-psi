@@ -78,7 +78,9 @@ export default function Pagination() {
           </button>
         </Link>
       </div>
-      <p className="color-neutral-400 text-center mt-3 lead">الصفحة 1 من 5</p>
+      <p className="color-neutral-400 text-center mt-3 lead">
+        الصفحة {page} من 5
+      </p>
     </>
   );
 }
