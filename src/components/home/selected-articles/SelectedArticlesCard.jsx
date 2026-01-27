@@ -5,7 +5,13 @@ import UserBadge from "../../reusable-cpt/user-badge/UserBadge";
 export default function SelectedArticlesCard({ post }) {
   return (
     <>
-      <Link className="col-12 col-md-6 p-0 position-relative  border-neutral-700  mb-5">
+      <Link
+        to={{
+          pathname: "blog",
+          hash: "#blog-articles",
+        }}
+        className="col-12 col-md-6 p-0 position-relative  border-neutral-700  mb-5"
+      >
         <div className="h-100 overflow-hidden">
           <img src={post.image} className="" alt={post.title} />
           {post.featured && (
@@ -13,7 +19,13 @@ export default function SelectedArticlesCard({ post }) {
           )}
         </div>
       </Link>
-      <Link className="col-12 col-md-6 bg-main-color p-5 border-neutral-700 mb-5">
+      <Link
+        to={{
+          pathname: "blog",
+          hash: "#blog-articles",
+        }}
+        className="col-12 col-md-6 bg-main-color p-5 border-neutral-700 mb-5"
+      >
         <div>
           <div className="d-flex gap-3 align-items-center">
             <span className="rounded-pill py-1 px-4 text-main-color fw-bold text-sm badge-bg-color border-orange-400">

@@ -44,7 +44,7 @@ export default function DiscoverSection() {
         </AdasaMainButton>
       </div>
 
-      <div className="d-flex gap-3 justify-content-between">
+      <div className="d-flex  w-100 gap-3 justify-content-between">
         {cardsData.map((card, index) => (
           <HomeAboutCard key={index} {...card} />
         ))}

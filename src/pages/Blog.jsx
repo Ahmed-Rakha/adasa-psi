@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import classes from "./Blog.module.css";
 import Header from "../components/blog/header/Header";
 import FilterBar from "../components/blog/FilterBar/FilterBar";
-import { useOutletContext } from "react-router";
+import { useOutletContext, useSearchParams } from "react-router";
 import Articles from "../components/blog/articles/Articles";
 export default function Blog() {
   let { posts, categories } = useOutletContext();
   const [selectedCategory, setSelectedCategory] = useState("جميع المقالات");
   const [searchTerm, setSearchTerm] = useState("");
   const [filterActive, setFilterActive] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams.get("category"));
+  useEffect(() => {
+    const categoryFromUrl = searchParams.get("category");
+
+    setSelectedCategory(categoryFromUrl || "جميع المقالات");
+  }, [searchParams]);
 
   if (selectedCategory === "جميع المقالات") {
     posts.filter(() => true);
