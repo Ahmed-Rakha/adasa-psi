@@ -4,6 +4,7 @@
 
 html {
   direction: var(--direction);
+  scroll-behavior: smooth;
 }
 [dir="ltr"] {
   --direction: ltr;
