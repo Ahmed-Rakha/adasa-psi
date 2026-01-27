@@ -1,4 +1,3 @@
-import { useState } from "react";
 import LatestArticlesCard from "../../../home/latest-articles/LatestArticlesCard";
 import Pagination from "../../pagination/Pagination";
 import NoArticlulesFound from "./NoArticlulesFound";
