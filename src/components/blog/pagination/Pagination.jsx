@@ -1,21 +1,12 @@
 import { Link } from "react-router";
 import classes from "./pagination.module.css";
-import { useState } from "react";
 
-export default function Pagination() {
-  const [page, setPage] = useState(1);
-  function handlePagination(pageNumber) {
-    setPage(pageNumber);
-  }
-
-  function handleIncrement(increment) {
-    if (page === 5) return;
-    setPage(page + 1);
-  }
-  function handleDecrement(decrement) {
-    if (page === 1) return;
-    setPage(page - 1);
-  }
+export default function Pagination({
+  page,
+  handlePagination,
+  handleIncrement,
+  handleDecrement,
+}) {
   return (
     <>
       <div

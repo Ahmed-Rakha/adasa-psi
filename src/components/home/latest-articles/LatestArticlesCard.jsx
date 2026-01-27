@@ -1,6 +1,8 @@
-export default function LatestArticlesCard({ post }) {
+export default function LatestArticlesCard({ post, view }) {
   return (
-    <div className="col-12 col-md-4">
+    <div
+      className={`${view === "grid" ? "col-12 col-md-4" : view === "list" ? "col-12" : "col-12 col-md-4"}`}
+    >
       <div className="inner border-neutral-700 rounded-5 overflow-hidden">
         <div className="">
           <img src={post.image} alt={post.title} className="" />

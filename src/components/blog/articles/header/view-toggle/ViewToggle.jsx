@@ -1,12 +1,6 @@
-import { useState } from "react";
 import classes from "./viewToggle.module.css";
 
-export default function ViewToggle() {
-  const [view, setView] = useState("grid");
-
-  function handleView(viewType) {
-    setView(viewType);
-  }
+export default function ViewToggle({ handleView, view }) {
   return (
     <div className={`d-flex  ${classes["view-container"]}`}>
       <button

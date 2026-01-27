@@ -1,13 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import classes from "./categorySelector.module.css";
-export default function CategorySelector({ categories }) {
+export default function CategorySelector({
+  categories,
+  selectedCategory,
+  handleSelectedCategory,
+}) {
   console.log("Hello from CategorySelector", categories);
-  const [selectedCategory, setSelectedCategory] = useState("جميع المقالات");
+
   const categoriesList = [{ name: "جميع المقالات" }, ...categories];
 
-  function handleActiveBtn(category) {
-    setSelectedCategory(category);
-  }
   return (
     <div className="col-12 col-md-8">
       <div
@@ -22,7 +23,7 @@ export default function CategorySelector({ categories }) {
                   ? `${classes["active"]} `
                   : undefined
               }
-              onClick={() => handleActiveBtn(item.name)}
+              onClick={() => handleSelectedCategory(item.name)}
             >
               {item.name}
             </button>

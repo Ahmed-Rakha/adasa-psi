@@ -1,0 +1,13 @@
+.clear-filters-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--color-neutral-500);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+  color: var(--color-orange-500);
+}
