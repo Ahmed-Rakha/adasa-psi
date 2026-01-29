@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import classes from "./Blog.module.css";
+import classes from "./blog.module.css";
 import Header from "../components/blog/header/Header";
 import FilterBar from "../components/blog/FilterBar/FilterBar";
 import { useOutletContext, useSearchParams } from "react-router";
