@@ -1,6 +1,6 @@
 import PulseCircle from "../../reusable-cpt/pulse-circle/PulseCircle";
 
-export default function header() {
+export default function Header() {
   return (
     <>
       <div className="container py-5  text-center d-flex flex-column justify-content-center align-items-center gap-4">
