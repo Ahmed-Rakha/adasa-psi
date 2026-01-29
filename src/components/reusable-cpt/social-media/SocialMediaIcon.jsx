@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import classes from "./SocialMediaIcon.module.css";
+import classes from "./socialMediaIcon.module.css";
 export default function SocialMediaIcon({ iconClass, path }) {
   return (
     <Link
