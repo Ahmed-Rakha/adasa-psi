@@ -11,7 +11,7 @@ export default function SelectedArticles({ posts }) {
             <PulseCircle>مميز</PulseCircle>
           </div>
           <h2 className="text-xxl text-white mt-4">مقالات مختارة</h2>
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
             <p className="lead color-neutral-400">
               محتوى منتقى لبدء رحلة تعلمك
             </p>

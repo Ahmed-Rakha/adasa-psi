@@ -9,7 +9,7 @@ const cardsData = [
 ];
 export default function DiscoverSection() {
   return (
-    <div className="container py-5  text-center d-flex flex-column justify-content-center align-items-center gap-4">
+    <div className="container py-5 text-center d-flex flex-column justify-content-center align-items-center gap-4">
       <PulseCircle numOfCircles={2}>مرحباً بك في عدسة</PulseCircle>
       <div className="">
         <h2>
@@ -20,10 +20,10 @@ export default function DiscoverSection() {
           <span className=" text-xxl">التصوير الفوتوغرافي</span>
         </h2>
       </div>
-      <p className="lead color-neutral-400">
+      <p className="lead color-neutral-400 ">
         انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في التصوير.
       </p>
-      <div className="d-flex gap-3">
+      <div className="d-flex flex-column flex-md-row gap-3 ">
         <AdasaMainButton
           borderRadius="30px"
           padding="18px 30px"
@@ -44,7 +44,7 @@ export default function DiscoverSection() {
         </AdasaMainButton>
       </div>
 
-      <div className="d-flex  w-100 gap-3 justify-content-between">
+      <div className="row row-cols-2 row-cols-md-4 w-75 mt-3">
         {cardsData.map((card, index) => (
           <HomeAboutCard key={index} {...card} />
         ))}

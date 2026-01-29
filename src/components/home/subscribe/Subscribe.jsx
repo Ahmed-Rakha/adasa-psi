@@ -23,11 +23,11 @@ export default function Subscribe() {
             احصل على نصائح التصوير الحصرية ودروس جديدة مباشرة في بريدك
             الإلكتروني
           </p>
-          <div className="d-flex justify-content-center gap-3 mb-5">
+          <div className="d-flex justify-content-center flex-column flex-md-row gap-3 mb-5">
             <input
               type="text"
               placeholder="أدخل بريدك الإلكتروني"
-              className="p-3 w-50 bg-md-black  border-0 color-neutral-400 rounded-4"
+              className="p-3 bg-md-black  border-0 color-neutral-400 rounded-4 form-control"
             />
             <AdasaMainButton padding="18px 40px" fontSize="20px">
               اشترك الآن
@@ -35,15 +35,17 @@ export default function Subscribe() {
           </div>
           <div className="d-flex justify-content-between align-items-center">
             <div></div>
-            <p>
-              <span className="color-neutral-400">انضم لـ</span>
-              <span className="text-white">&nbsp;</span>
-              <span className="text-white">+10,000</span>
-              <span>&nbsp;</span>
-              <span className="color-neutral-400">مصور</span>
-            </p>
-            <p className="color-neutral-400">بدون إزعاج</p>
-            <p className="color-neutral-400">إلغاء الاشتراك في أي وقت</p>
+            <div className="row row-cols-1 row-cols-md-3 ">
+              <p>
+                <span className="color-neutral-400">انضم لـ</span>
+                <span className="text-white">&nbsp;</span>
+                <span className="text-white">+10,000</span>
+                <span>&nbsp;</span>
+                <span className="color-neutral-400">مصور</span>
+              </p>
+              <p className="color-neutral-400">بدون إزعاج</p>
+              <p className="color-neutral-400">إلغاء الاشتراك في أي وقت</p>
+            </div>
           </div>
         </form>
       </div>

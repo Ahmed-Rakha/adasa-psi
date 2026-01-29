@@ -2,7 +2,7 @@
   padding-top: 120px;
 }
 .home-section > div {
-  width: 55%;
+  /* width: 55%; */
 }
 .home-section h2:nth-child(1) {
   color: white;

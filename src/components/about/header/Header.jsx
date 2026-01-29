@@ -9,18 +9,18 @@ export default function Header() {
     { icon: "fa fa-book", number: "15+", label: "تصنيف" },
   ];
   return (
-    <div className="container py-5  text-center d-flex flex-column justify-content-center align-items-center gap-4">
+    <div className="container w-100  py-5  text-center d-flex flex-column justify-content-center align-items-center gap-4">
       <PulseCircle numOfCircles={2}>من نحن </PulseCircle>
-      <div className="d-flex gap-2">
+      <div className="d-flex flex-column flex-md-row gap-2">
         <h2 className="text-xxl">مهمتنا هي </h2>
         <h2 className=" text-xxl">الاعلام والالهام</h2>
       </div>
-      <p className="lead color-neutral-400">
+      <p className="lead color-neutral-400 w-75">
         مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين
         ونصائح عملية لتطوير مهاراتكم. نحن شغوفون بمشاركة المعرفة ومساعدة
         المصورين على تنمية مهاراتهم من خلال محتوى عالي الجودة.
       </p>
-      <div className="row">
+      <div className="row row-cols-2 row-cols-md-4 w-75 mt-3">
         {cardsData.map((card, index) => (
           <HomeAboutCard key={index} {...card} />
         ))}

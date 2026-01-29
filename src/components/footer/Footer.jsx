@@ -120,7 +120,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className="border-neutral-600" />
-      <div className="container d-flex justify-content-between mt-5">
+      <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center mt-5">
         <div>
           <p className="color-neutral-400">
             <span>© 2026 عدسة. صنع بكل</span>
