@@ -1,0 +1,30 @@
+.not-found-container h2 {
+  font-size: 9rem;
+}
+
+.not-found-container .circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-neutral-400);
+}
+
+.not-found-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--color-orange-500);
+  background-color: color-mix(
+    in oklab,
+    var(--color-orange-500) 10%,
+    transparent
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.not-found-icon i {
+  font-size: 4.9rem;
+  color: var(--color-orange-500);
+}
