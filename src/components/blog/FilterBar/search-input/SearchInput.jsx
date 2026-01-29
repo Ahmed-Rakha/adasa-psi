@@ -1,4 +1,4 @@
-import classes from "./SearchInput.module.css";
+import classes from "./searchInput.module.css";
 export default function SearchInput({ handleSearch, searchTerm }) {
   return (
     <div className="col-12 col-md-4">
